@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCadastroDeEventos.Views.ResumoEventoPage">
+    <StackLayout Padding="10">
+        <Label Text="Resumo do Evento" TextColor="{StaticResource Primary}"  Margin="30" FontAttributes="Bold" FontSize="Large"
+               HorizontalOptions="CenterAndExpand"/>
+        <Frame HorizontalOptions="CenterAndExpand" BackgroundColor="{StaticResource Gray600}">
+            <VerticalStackLayout Padding="10">
+        <Label  Margin="10" Text="{Binding Nome}" />
+        <Label  Margin="10" Text="{Binding DataInicio, StringFormat='Data de Início: {0:dd/MM/yyyy}'}" />
+        <Label  Margin="10" Text="{Binding DataTermino, StringFormat='Data de Término: {0:dd/MM/yyyy}'}" />
+        <Label  Margin="10" Text="{Binding DuracaoEmDias, StringFormat='Duração: {0} dias'}" />
+        <Label  Margin="10" Text="{Binding NumeroParticipantes, StringFormat='Número de Participantes: {0}'}" />
+        <Label  Margin="10" Text="{Binding Local, StringFormat='Local: {0}'}" />
+        <Label  Margin="10" Text="{Binding CustoPorParticipante, StringFormat='Custo por Participante: {0:C}'}" />
+        <Label  Margin="10" Text="{Binding CustoTotal, StringFormat='Custo Total: {0:C}'}" />
+            </VerticalStackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
+
+    
